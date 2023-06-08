@@ -19,14 +19,14 @@ services:
     container_name: mongo
     image: mongo
     ports:
-      -27017:27017
+      - 27017:27017
     volumes:
       - ./data/mongo:/data/db
   postgres:
     container_name: postgres
     image: postgres
     ports:
-      -5432:5432
+      - 5432:5432
     volumes:
       - ./data/postgres:/var/lib/postgresql/data
     environment:
